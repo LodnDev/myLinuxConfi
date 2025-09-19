@@ -1,0 +1,39 @@
+depois da instalação do archlinux via archinstall, escolha ultima opção para você configurar.
+
+caso queira limpar o terminal pressione "ctlr+l" isso caso seu cursor esteja la embaixo da tela.
+
+primeira configuração é ajustar a quantida de núcleos que a maquina vai usar.
+
+entre no arquivo "makepkg.conf", pode ser via nano mesmo.
+
+caminho:
+/etc/makepkg.conf
+
+e edite a linha #MAKEFLAGS="j2"
+
+descomente ela, e no kota coloca a quantida de núcleos que vc quer que o makepkg use.
+
+EXEMPLO:
+MAKEFLAGS="j4"
+
+depois salve saia do arquivo usando ctlr+s e depois ctlr+x
+
+agora entre no arquivo pacman.conf
+
+CAMINHO:
+/etc/pacman.conf
+
+e descomente a linha "Color"
+
+depois salve e saia do arquivo
+
+entre no arquivo nanorc
+
+CAMINHO:
+/etc/nanorc
+
+descomente a linha include /usr/share/nano/html.nanorc
+
+salve e saia do arquivo.
+agora escreva exit para voltar ao modo live.
+depois escreva reboot para reiniciar o sistema.
